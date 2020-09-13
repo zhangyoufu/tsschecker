@@ -29,27 +29,44 @@ Recovery Nonce Collisions only occur on a few iOS versions, like iOS 9.3.3 and i
 
 DFU Nonce Collisions commonly occur on any device using A7 and A8 chipsets, regardless of iOS version.<br>and is much more reliable than using recovery collisions.
 
-# Dependencies
-*  ## Bundled libs
-  Those don't need to be installed manually
-  * [tss](https://github.com/libimobiledevice)
-* ## External libs
-  Make sure these are installed
-  * [libcurl](https://curl.haxx.se/libcurl/)
-  * [libplist](https://github.com/libimobiledevice/libplist)
+# Build
+Install dependencies
+
+* Buildsystem:
+  * autoconf
+  * automake
+  * libtool
+  * m4
+  * pkg-config
+
+* Tihmstar's tools:
+  * [libgeneral](https://github.com/tihmstar/libgeneral)
   * [libfragmentzip](https://github.com/tihmstar/libfragmentzip)
-  * [openssl](https://github.com/openssl/openssl) or commonCrypto on macOS/OS X;
-  * [libirecovery](https://github.com/libimobiledevice/libirecovery);
-* ## Submodules
-  Make sure these projects compile on your system
+
+* External:
+  * [libcurl](https://curl.haxx.se/libcurl/)
+  * [libirecovery](https://github.com/libimobiledevice/libirecovery)
+  * [libplist](https://github.com/libimobiledevice/libplist)
+  * [openssl](https://www.openssl.org/) or commonCrypto on macOS/OS X
+  
+* Submodules:
   * [jssy](https://github.com/tihmstar/jssy)
+  
+* Bundled libs, (not required to be installed manually):
+  * [tss](https://github.com/libimobiledevice)
 
-## Help  
+To compile, run:
 
+```bash
+./autogen.sh
+make
+sudo make install
+```
 
+# Help  
 Usage: `tsschecker [OPTIONS]`
 
-Example: `tsschecker -d iPhone10,1 -B D20AP -e <ecid> -i 13.4.1 --generator 0x1111111111111111 -s`
+Example: `tsschecker -d iPhone10,1 -B D20AP -e [ECID] -i 13.4.1 --generator 0x1111111111111111 -s`
 
 | option (short) | option (long)             | description                                                                       |
 |----------------|---------------------------|-----------------------------------------------------------------------------------|
