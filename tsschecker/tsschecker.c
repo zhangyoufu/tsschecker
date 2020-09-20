@@ -117,124 +117,136 @@ static struct bbdevice bbdevices[] = {
     {"iPod9,1", 0, 0}, // 7th gen
     
     // iPhones
-    {"iPhone3,1", 257, 12}, // iPhone 4 GSM
-    {"iPhone3,2", 257, 12}, // iPhone 4 GSM (2012, Rev A)
-    {"iPhone3,3", 2, 4}, // iPhone 4 CDMA
-    {"iPhone4,1", 2, 4}, // iPhone 4s
-    {"iPhone5,1", 3255536192, 4}, // iPhone 5 (GSM)
-    {"iPhone5,2", 3255536192, 4}, // iPhone 5 (Global)
-    {"iPhone5,3", 3554301762, 4}, // iPhone 5c (GSM)
-    {"iPhone5,4", 3554301762, 4}, // iPhone 5c (Global)
-    {"iPhone6,1", 3554301762, 4}, // iPhone 5s (GSM)
-    {"iPhone6,2", 3554301762, 4}, // iPhone 5s (Global)
-    {"iPhone7,1", 3840149528, 4}, // iPhone 6 Plus
-    {"iPhone7,2", 3840149528, 4}, // iPhone 6
-    {"iPhone8,1", 3840149528, 4}, // iPhone 6s
-    {"iPhone8,2", 3840149528, 4}, // iPhone 6s Plus
-    {"iPhone8,4", 3840149528, 4}, // iPhone SE
-    {"iPhone9,1", 2315222105, 4}, // iPhone 7 (Global)
-    {"iPhone9,2", 2315222105, 4}, // iPhone 7 Plus (Global)
-    {"iPhone9,3", 1421084145, 12}, // iPhone 7 GSM
-    {"iPhone9,4", 1421084145, 12}, // iPhone 7 Plus (GSM)
-    {"iPhone10,1", 2315222105, 4}, // iPhone 8 (Global)
-    {"iPhone10,2", 2315222105, 4}, // iPhone 8 Plus (Global)
-    {"iPhone10,3", 2315222105, 4}, // iPhone X (Global)
-    {"iPhone10,4", 524245983, 12}, // iPhone 8 (GSM)
-    {"iPhone10,5", 524245983, 12}, // iPhone 8 Plus (GSM)
-    {"iPhone10,6", 524245983, 12}, // iPhone X GSM
-    {"iPhone11,2", 165673526, 12}, // iPhone XS
-    {"iPhone11,4", 165673526, 12}, // iPhone XS Max (China)
-    {"iPhone11,6", 165673526, 12}, // iPhone XS Max (Global)
-    {"iPhone11,8", 165673526, 12}, // iPhone XR
-    {"iPhone12,1", 524245983, 12}, // iPhone 11
-    {"iPhone12,3", 524245983, 12}, // iPhone 11 Pro
-    {"iPhone12,5", 524245983, 12}, // iPhone 11 Pro Max
-    {"iPhone12,8", 524245983, 12}, // iPhone SE (2020)
+    {"iPhone3,1",  257, 12},        // iPhone 4 GSM
+    {"iPhone3,2",  257, 12},        // iPhone 4 GSM (2012, Rev A)
+    {"iPhone3,3",  2, 4},           // iPhone 4 CDMA
+    {"iPhone4,1",  2, 4},           // iPhone 4s
+    {"iPhone5,1",  3255536192, 4},  // iPhone 5 (GSM)
+    {"iPhone5,2",  3255536192, 4},  // iPhone 5 (Global)
+    {"iPhone5,3",  3554301762, 4},  // iPhone 5c (GSM)
+    {"iPhone5,4",  3554301762, 4},  // iPhone 5c (Global)
+    {"iPhone6,1",  3554301762, 4},  // iPhone 5s (GSM)
+    {"iPhone6,2",  3554301762, 4},  // iPhone 5s (Global)
+    {"iPhone7,1",  3840149528, 4},  // iPhone 6 Plus
+    {"iPhone7,2",  3840149528, 4},  // iPhone 6
+    {"iPhone8,1",  3840149528, 4},  // iPhone 6s
+    {"iPhone8,2",  3840149528, 4},  // iPhone 6s Plus
+    {"iPhone8,4",  3840149528, 4},  // iPhone SE
+    {"iPhone9,1",  2315222105, 4},  // iPhone 7 (Global)
+    {"iPhone9,2",  2315222105, 4},  // iPhone 7 Plus (Global)
+    {"iPhone9,3",  1421084145, 12}, // iPhone 7 GSM
+    {"iPhone9,4",  1421084145, 12}, // iPhone 7 Plus (GSM)
+    {"iPhone10,1", 2315222105, 4},  // iPhone 8 (Global)
+    {"iPhone10,2", 2315222105, 4},  // iPhone 8 Plus (Global)
+    {"iPhone10,3", 2315222105, 4},  // iPhone X (Global)
+    {"iPhone10,4", 524245983, 12},  // iPhone 8 (GSM)
+    {"iPhone10,5", 524245983, 12},  // iPhone 8 Plus (GSM)
+    {"iPhone10,6", 524245983, 12},  // iPhone X GSM
+    {"iPhone11,2", 165673526, 12},  // iPhone XS
+    {"iPhone11,4", 165673526, 12},  // iPhone XS Max (China)
+    {"iPhone11,6", 165673526, 12},  // iPhone XS Max (Global)
+    {"iPhone11,8", 165673526, 12},  // iPhone XR
+    {"iPhone12,1", 524245983, 12},  // iPhone 11
+    {"iPhone12,3", 524245983, 12},  // iPhone 11 Pro
+    {"iPhone12,5", 524245983, 12},  // iPhone 11 Pro Max
+    {"iPhone12,8", 524245983, 12},  // iPhone SE (2020)
     
     // iPads
-    {"iPad1,1", 0, 0}, // iPad (1st gen)
-    {"iPad2,1", 0, 0}, // iPad 2 Wi-Fi
-    {"iPad2,2", 257, 12}, // iPad 2 GSM
-    {"iPad2,3", 257, 12}, // iPad 2 CDMA
-    {"iPad2,4", 0, 0}, // iPad 2 Wi-Fi (2012, Rev A)
-    {"iPad3,1", 0, 0}, // the new iPad (3rd gen, Wi-Fi)
-    {"iPad3,2", 4, 4}, // the new iPad (3rd gen, CDMA)
-    {"iPad3,3", 4, 4}, // the new iPad (3rd gen, GSM)
-    {"iPad3,4", 0, 0}, // iPad with Retina display (4th gen, Wi-Fi)
-    {"iPad3,5", 3255536192, 4}, // iPad with Retina display (4th gen, CDMA)
-    {"iPad3,6", 3255536192, 4}, // iPad with Retina display (4th gen, GSM)
-    {"iPad6,11", 0, 0}, // iPad (5th gen, 2017, Wi-Fi)
+    {"iPad1,1",  0, 0},          // iPad (1st gen)
+    {"iPad2,1",  0, 0},          // iPad 2 Wi-Fi
+    {"iPad2,2",  257, 12},       // iPad 2 GSM
+    {"iPad2,3",  257, 12},       // iPad 2 CDMA
+    {"iPad2,4",  0, 0},          // iPad 2 Wi-Fi (2012, Rev A)
+    {"iPad3,1",  0, 0},          // iPad (3rd gen, Wi-Fi)
+    {"iPad3,2",  4, 4},          // iPad (3rd gen, CDMA)
+    {"iPad3,3",  4, 4},          // iPad (3rd gen, GSM)
+    {"iPad3,4",  0, 0},          // iPad with Retina display (4th gen, Wi-Fi)
+    {"iPad3,5",  3255536192, 4}, // iPad with Retina display (4th gen, CDMA)
+    {"iPad3,6",  3255536192, 4}, // iPad with Retina display (4th gen, GSM)
+    {"iPad6,11", 0, 0},          // iPad (5th gen, 2017, Wi-Fi)
     {"iPad6,12", 3840149528, 4}, // iPad (5th gen, 2017, Cellular)
-    {"iPad7,5", 0, 0}, // iPad (6th gen, 2018, Wi-Fi)
-    {"iPad7,6", 3840149528, 4}, // iPad (6th gen, 2018, Cellular)
-    {"iPad7,11", 0, 0}, // iPad (7th gen, 2019, Wi-Fi)
-    {"iPad7,12", 524245983, 12}, // iPad (7th gen, 2019, Cellular)
+    {"iPad7,5",  0, 0},          // iPad (6th gen, 2018, Wi-Fi)
+    {"iPad7,6",  3840149528, 4}, // iPad (6th gen, 2018, Cellular)
+    {"iPad7,11", 0, 0},          // iPad (7th gen, 2019, Wi-Fi)
+    {"iPad7,12", 165673526, 12}, // iPad (7th gen, 2019, Cellular)
+    {"iPad11,6", 0, 0},          // iPad (8th gen, 2020, Wi-Fi)
+    {"iPad11,7", 165673526, 12}, // iPad (8th gen, 2020, Cellular)
     
     // iPad minis
-    {"iPad2,5", 0, 0}, // iPad mini (1st gen, Wi-Fi)
-    {"iPad2,6", 3255536192, 4}, // iPad mini (1st gen, CDMA)
-    {"iPad2,7", 3255536192, 4}, // iPad mini (1st gen, GSM)
-    {"iPad4,4", 0, 0}, // iPad mini 2 (Wi-Fi)
-    {"iPad4,5", 3554301762, 4}, // iPad mini 2 (Cellular)
-    {"iPad4,6", 3554301762, 4}, // iPad mini 2 (Cellular, China)
-    {"iPad4,7", 0, 0}, // iPad mini 3 (Wi-Fi)
-    {"iPad4,8", 3554301762, 4}, // iPad mini 3 (Cellular)
-    {"iPad4,9", 3554301762, 4}, // iPad mini 3 (Cellular, China)
-    {"iPad5,1", 0, 0}, // iPad mini 4 (Wi-Fi)
-    {"iPad5,2", 3840149528, 4}, // iPad mini 4 (Cellular)
-    {"iPad11,1", 0, 0}, // iPad mini (5th gen, Wi-Fi)
+    {"iPad2,5",  0, 0},          // iPad mini (1st gen, Wi-Fi)
+    {"iPad2,6",  3255536192, 4}, // iPad mini (1st gen, CDMA)
+    {"iPad2,7",  3255536192, 4}, // iPad mini (1st gen, GSM)
+    {"iPad4,4",  0, 0},          // iPad mini 2 (Wi-Fi)
+    {"iPad4,5",  3554301762, 4}, // iPad mini 2 (Cellular)
+    {"iPad4,6",  3554301762, 4}, // iPad mini 2 (Cellular, China)
+    {"iPad4,7",  0, 0},          // iPad mini 3 (Wi-Fi)
+    {"iPad4,8",  3554301762, 4}, // iPad mini 3 (Cellular)
+    {"iPad4,9",  3554301762, 4}, // iPad mini 3 (Cellular, China)
+    {"iPad5,1",  0, 0},          // iPad mini 4 (Wi-Fi)
+    {"iPad5,2",  3840149528, 4}, // iPad mini 4 (Cellular)
+    {"iPad11,1", 0, 0},          // iPad mini (5th gen, Wi-Fi)
     {"iPad11,2", 165673526, 12}, // iPad mini (5th gen, Cellular)
     
     // iPad Airs
-    {"iPad4,1", 0, 0}, // iPad Air (Wi-Fi)
-    {"iPad4,2", 3554301762, 4}, // iPad Air (Cellular)
-    {"iPad4,3", 3554301762, 4}, // iPad Air (Cellular, China)
-    {"iPad5,3", 0, 0}, // iPad Air 2 (Wi-Fi)
-    {"iPad5,4", 3840149528, 4}, // iPad Air 2 (Cellular)
-    {"iPad11,3", 0, 0}, // iPad Air (3rd gen, Wi-Fi)
+    {"iPad4,1",  0, 0},          // iPad Air (Wi-Fi)
+    {"iPad4,2",  3554301762, 4}, // iPad Air (Cellular)
+    {"iPad4,3",  3554301762, 4}, // iPad Air (Cellular, China)
+    {"iPad5,3",  0, 0},          // iPad Air 2 (Wi-Fi)
+    {"iPad5,4",  3840149528, 4}, // iPad Air 2 (Cellular)
+    {"iPad11,3", 0, 0},          // iPad Air (3rd gen, Wi-Fi)
     {"iPad11,4", 165673526, 12}, // iPad Air (3rd gen, Cellular)
+    {"iPad13,1", 0, 0},          // iPad Air (4th gen, Wi-Fi)
+    {"iPad13,2", 524245983, 12}, // iPad Air (4th gen, Cellular)
     
     // iPad Pros
-    {"iPad6,3", 0, 0}, // iPad Pro (9,7", Wi-Fi)
-    {"iPad6,4", 3840149528, 4}, // iPad Pro (9,7", Cellular)
-    {"iPad6,7", 0, 0}, // iPad Pro (12.9", 1st gen, Wi-Fi)
-    {"iPad6,8", 3840149528, 4}, // iPad Pro (12.9", 1st gen, Cellular)
-    {"iPad7,1", 0, 0}, // iPad Pro (12.9", 2nd gen, Wi-Fi)
-    {"iPad7,2", 2315222105, 4}, // iPad Pro (12.9", 1st gen, Cellular)
-    {"iPad7,3", 0, 0}, // iPad Pro (10,5", Wi-Fi)
-    {"iPad7,4", 2315222105, 4}, // iPad Pro (10,5", Cellular)
-    {"iPad8,1", 0, 0}, // iPad Pro (11", Wi-Fi)
-    {"iPad8,2", 0, 0}, // iPad Pro (11", 1 TB model, Wi-Fi)
-    {"iPad8,3", 165673526, 12}, // iPad Pro 11", Cellular)
-    {"iPad8,4", 165673526, 12}, // iPad Pro 11", 1 TB model, Cellular)
-    {"iPad8,5", 0, 0}, // iPad Pro (12,9", 3rd gen, Wi-Fi)
-    {"iPad8,6", 0, 0}, // iPad Pro (12,9", 3rd gen, 1 TB model, Wi-Fi)
-    {"iPad8,7", 165673526, 12}, // iPad Pro 12,9", 3rd gen, Cellular)
-    {"iPad8,8", 165673526, 12}, // iPad Pro 12,9", 3rd gen, 1 TB model, Cellular)
-    {"iPad8,9", 0, 0}, // iPad Pro (11", 2nd gen, Wi-Fi)
-    {"iPad8,10", 524245983, 12}, // iPad Pro 11", 2nd gen, Cellular)
-    {"iPad8,11", 0, 0}, // iPad Pro (12,9", 4th gen, Wi-Fi)
-    {"iPad8,12", 524245983, 12}, // iPad Pro 12,9", 4th gen, Cellular)
+    {"iPad6,3",  0, 0},          // iPad Pro (9.7-inch, Wi-Fi)
+    {"iPad6,4",  3840149528, 4}, // iPad Pro (9.7-inch, Cellular)
+    {"iPad6,7",  0, 0},          // iPad Pro (12.9-inch, 1st gen, Wi-Fi)
+    {"iPad6,8",  3840149528, 4}, // iPad Pro (12.9-inch, 1st gen, Cellular)
+    {"iPad7,1",  0, 0},          // iPad Pro (12.9-inch, 2nd gen, Wi-Fi)
+    {"iPad7,2",  2315222105, 4}, // iPad Pro (12.9-inch, 2nd gen, Cellular)
+    {"iPad7,3",  0, 0},          // iPad Pro (10.5-inch, Wi-Fi)
+    {"iPad7,4",  2315222105, 4}, // iPad Pro (10.5-inch, Cellular)
+    {"iPad8,1",  0, 0},          // iPad Pro (11-inch, 1st gen, Wi-Fi)
+    {"iPad8,2",  0, 0},          // iPad Pro (11-inch, 1st gen, 1TB, Wi-Fi)
+    {"iPad8,3",  165673526, 12}, // iPad Pro (11-inch, 1st gen, Cellular)
+    {"iPad8,4",  165673526, 12}, // iPad Pro (11-inch, 1st gen, 1TB, Cellular)
+    {"iPad8,5",  0, 0},          // iPad Pro (12.9-inch, 3rd gen, Wi-Fi)
+    {"iPad8,6",  0, 0},          // iPad Pro (12.9-inch, 3rd gen, 1TB, Wi-Fi)
+    {"iPad8,7",  165673526, 12}, // iPad Pro (12.9-inch, 3rd gen, Cellular)
+    {"iPad8,8",  165673526, 12}, // iPad Pro (12.9-inch, 3rd gen, 1TB, Cellular)
+    {"iPad8,9",  0, 0},          // iPad Pro (11-inch, 2nd gen, Wi-Fi)
+    {"iPad8,10", 524245983, 12}, // iPad Pro (11-inch, 2nd gen, Cellular)
+    {"iPad8,11", 0, 0},          // iPad Pro (12.9-inch, 4th gen, Wi-Fi)
+    {"iPad8,12", 524245983, 12}, // iPad Pro (12.9-inch, 4th gen, Cellular)
     
     // Apple Watches
-    {"Watch1,1", 0, 0}, // Apple Watch 1st gen (38mm)
-    {"Watch1,2", 0, 0}, // Apple Watch 1st gen (42mm)
-    {"Watch2,6", 0, 0}, // Apple Watch Series 1 (38mm)
-    {"Watch2,7", 0, 0}, // Apple Watch Series 1 (42mm)
-    {"Watch2,3", 0, 0}, // Apple Watch Series 2 (38mm)
-    {"Watch2,4", 0, 0}, // Apple Watch Series 2 (42mm)
-    {"Watch3,1", 3840149528, 4}, // Apple Watch Series 3 (38mm GPS + Cellular)
-    {"Watch3,2", 3840149528, 4}, // Apple Watch Series 3 (42mm GPS + Cellular)
-    {"Watch3,3", 0, 0}, // Apple Watch Series 3 (38mm GPS)
-    {"Watch3,4", 0, 0}, // Apple Watch Series 3 (42mm GPS)
-    {"Watch4,1", 0, 0}, // Apple Watch Series 4 (40mm GPS)
-    {"Watch4,2", 0, 0}, // Apple Watch Series 4 (44mm GPS)
-    {"Watch4,3", 744114402, 12}, // Apple Watch Series 4 (40mm GPS + Cellular)
-    {"Watch4,4", 744114402, 12}, // Apple Watch Series 4 (44mm GPS + Cellular)
-    {"Watch5,1", 0, 0}, // Apple Watch Series 5 (40mm GPS)
-    {"Watch5,2", 0, 0}, // Apple Watch Series 5 (44mm GPS)
-    {"Watch5,3", 744114402, 12}, // Apple Watch Series 5 (40mm GPS + Cellular)
-    {"Watch5,4", 744114402, 12}, // Apple Watch Series 5 (44mm GPS + Cellular)
+    {"Watch1,1",  0, 0},          // Apple Watch 1st gen (38mm)
+    {"Watch1,2",  0, 0},          // Apple Watch 1st gen (42mm)
+    {"Watch2,6",  0, 0},          // Apple Watch Series 1 (38mm)
+    {"Watch2,7",  0, 0},          // Apple Watch Series 1 (42mm)
+    {"Watch2,3",  0, 0},          // Apple Watch Series 2 (38mm)
+    {"Watch2,4",  0, 0},          // Apple Watch Series 2 (42mm)
+    {"Watch3,1",  3840149528, 4}, // Apple Watch Series 3 (38mm GPS + Cellular)
+    {"Watch3,2",  3840149528, 4}, // Apple Watch Series 3 (42mm GPS + Cellular)
+    {"Watch3,3",  0, 0},          // Apple Watch Series 3 (38mm GPS)
+    {"Watch3,4",  0, 0},          // Apple Watch Series 3 (42mm GPS)
+    {"Watch4,1",  0, 0},          // Apple Watch Series 4 (40mm GPS)
+    {"Watch4,2",  0, 0},          // Apple Watch Series 4 (44mm GPS)
+    {"Watch4,3",  744114402, 12}, // Apple Watch Series 4 (40mm GPS + Cellular)
+    {"Watch4,4",  744114402, 12}, // Apple Watch Series 4 (44mm GPS + Cellular)
+    {"Watch5,1",  0, 0},          // Apple Watch Series 5 (40mm GPS)
+    {"Watch5,2",  0, 0},          // Apple Watch Series 5 (44mm GPS)
+    {"Watch5,3",  744114402, 12}, // Apple Watch Series 5 (40mm GPS + Cellular)
+    {"Watch5,4",  744114402, 12}, // Apple Watch Series 5 (44mm GPS + Cellular)
+    {"Watch5,9",  0, 0},          // Apple Watch SE (40mm GPS)
+    {"Watch5,10", 0, 0},          // Apple Watch SE (44mm GPS)
+    {"Watch5,11", 744114402, 12}, // Apple Watch SE (40mm GPS + Cellular)
+    {"Watch5,12", 744114402, 12}, // Apple Watch SE (44mm GPS + Cellular)
+    {"Watch6,1",  0, 0},          // Apple Watch Series 6 (40mm GPS)
+    {"Watch6,2",  0, 0},          // Apple Watch Series 6 (44mm GPS)
+    {"Watch6,3",  744114402, 12}, // Apple Watch Series 6 (40mm GPS + Cellular)
+    {"Watch6,4",  744114402, 12}, // Apple Watch Series 6 (44mm GPS + Cellular)
     
     // Apple TVs
     {"AppleTV1,1", 0, 0}, // 1st gen
