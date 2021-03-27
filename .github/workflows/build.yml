@@ -1,0 +1,73 @@
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies
+      run: |-
+        sudo apt-get update
+        DEBIAN_FRONTEND=noninteractive sudo -E apt-get install --yes --no-install-recommends --option Dpkg::Use-Pty=0 autoconf automake libcurl4-openssl-dev libreadline-dev libssl-dev libtool-bin libusb-1.0-0-dev libzip-dev pkg-config
+    - name: Checkout libirecovery (master)
+      uses: actions/checkout@v2
+      with:
+        repository: libimobiledevice/libirecovery
+        path: libirecovery
+    - name: Build and install libirecovery (master)
+      run: |-
+        cd libirecovery
+        ./autogen.sh --disable-dependency-tracking --enable-static --disable-shared
+        make -j2
+        sudo make -j2 install
+    - name: Checkout libplist (master)
+      uses: actions/checkout@v2
+      with:
+        repository: libimobiledevice/libplist
+        path: libplist
+    - name: Build and install libplist (master)
+      env: # workaround for libimobiledevice/libplist #190
+        CC: gcc
+      run: |-
+        cd libplist
+        ./autogen.sh --disable-dependency-tracking --enable-static --disable-shared --without-cython
+        make -j2
+        sudo make -j2 install
+    - name: Checkout libgeneral (master)
+      uses: actions/checkout@v2
+      with:
+        repository: tihmstar/libgeneral
+        path: libgeneral
+        fetch-depth: 0
+    - name: Build and install libgeneral (master)
+      run: |-
+        cd libgeneral
+        ./autogen.sh --disable-dependency-tracking --enable-static --disable-shared
+        make -j2
+        sudo make -j2 install
+    - name: Checkout libfragmentzip (master)
+      uses: actions/checkout@v2
+      with:
+        repository: tihmstar/libfragmentzip
+        path: libfragmentzip
+        fetch-depth: 0
+    - name: Build and install libfragmentzip (master)
+      run: |-
+        cd libfragmentzip
+        ./autogen.sh --disable-dependency-tracking --enable-static --disable-shared
+        make -j2
+        sudo make -j2 install
+    - name: Checkout tsschecker
+      uses: actions/checkout@v2
+      with:
+        path: tsschecker
+        submodules: true
+    - name: Build tsschecker
+      run: |-
+        cd tsschecker
+        ./autogen.sh --disable-dependency-tracking
+        make -j2
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: tsschecker-ubuntu
+        path: tsschecker/tsschecker/tsschecker
